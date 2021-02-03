@@ -1,3 +1,135 @@
+                            SQUAD UP
+* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
+* [ ] Crear prototipos para obtener feedback e iterar.
+* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+* [ ] Planear y ejecutar tests de usabilidad.
+
+### Definición del producto
+
+Según la investigación que hemos realizado, encontramos lo siguiente:
+**características de nuestro público objetivo:**
+* Usuarios entre 15 y 35 años.
+* 60% son hombres y 40% son mujeres.
+* Los niveles de experiencia de nuestros usuarios son principiantes y conocedores.
+* Usuarios multinacionales que entienden el idioma castellano.
+* Usuarios tecnológicos.
+* Usuarios de clase media y alta.
+**Problemas que presentan los usuarios:**
+* Los principiantes no conocen a los jugadores del juego (140 campeones), no conocen sus roles, ni los niveles de ficultad, ni sus habilidades.
+* Los conocedores no conocen de estadísticas que les permitan estimar sus tácticas y estrategias de juego.
+**Solución a los problemas de nuestro producto digital:**
+* Permite a los usuarios escoger al campeón adecuado.
+* Permite a los usuarios conocer los roles (6) que tienen los campeones.
+* Permite a los usuarios conocer cuáles son los campeones más poderosos o defensivos.
+* Permite a los usuarios conocer las habilidades principales y secundarias de los campeones.
+* Permite a los usuarios conocer hacks para un mejor performance de las partidas jugadas.
+**Proceso de diseño del producto digital:**
+* Nuestro diseño se basó en la utilización de los colores utilizados en la plataforma oficial de LOL, esto con el fin de darle el look and feel del videojuego real.
+* Según la investigación a nuestros usuarios, entendimos que lo principal que necesitaban ver era al total de campeones y poder filtrarlos por su nombre, rol y nivel de dificultad. Ante ello, decidimos estructurar el contenido del site inicial de tal modo que el usuario pueda filtrar a los campeones de la manera más eficiente.
+* Además, para darle información relevante a los jugadores principiantes y conocedores, decidimos agregar otra página para que el usuario pueda nevegar en dicha información. Todo esto dándole click al botón "hacks".
+* El usuario, también, con 2 clicks puede acceder a toda la información que cada campeón tiene, sin necesidad de salir de esa página.
+* Por último decidimos enlazar un botón con la plataforma oficial de LOL para que el usuario pueda empezar a jugar y así darle la mejor experiencia posible.
+### Historias de usuario
+
+Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
+de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
+todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
+ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
+
+Asegúrate de incluir la definición de terminado (_definition of done_) y los
+Criterios de Aceptación para cada una.
+
+En la medida de lo posible, termina una historia de usuario antes de pasar
+a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
+
+#### Historia de usuario 1
+     COMO: Jugador LOL.
+     QUIERO: Conocer a todos los campeones de LOL.
+     PARA: Saber a cuál elegir para jugar.
+
+    *Criterios de aceptación*
+      - El usuario podrá encontrar un header con el logo y 3 botones que aterrizarán a vistas distintas. (Campeones, Hacks, Jugar).
+      - El usuario al entrar podrá ver una galería con todos los campeones por orden alfabético.
+      - El usuario podrá encontrar una barra de búsqueda para filtrar por nombre al campeón, además de 2 botones desplegables de roles y nivel de dificultad.
+      - El usuario podrá también podrá visualizar en la galería cada card de los campeones con lo siguiente::
+      --- El nombre de cada campeón
+      --- La imagen.
+      --- Botón de "+" para poder visualizar información más detallada del campeón.
+
+#### Historia de usuario 2
+     COMO: Jugador LOL
+     QUIERO: Encontrar específicamente a los campeones.
+     PARA: Conocer más sobre los campeones escogidos y sus características.
+
+  **Criterios de aceptación:**
+    - El usuario podrá hacer la búsqueda mediante 1 nombre en específico.
+    - EL usuario también podrá hacer una búsqueda mediante el botón desplegable que contiene el nombre de cada campeón.
+
+#### Historia de usuario 3
+     COMO: Jugador LOL
+     QUIERO: Conocer los roles de los campeones
+     PARA: Poder elegir estratégicamente a los campeones que competirán en 1 partida
+
+  **Criterios de aceptación:**
+    - El usuario podrá visualizar los 6 roles que existen en LOL.
+    - El usuario podrá filtrar a los campeones según los roles que escoja.
+    - El usuario podrá ver en orden alfabético a todos los campeones seleccionados.
+    - El usuario podrá desfiltrar sus opciones seleccionadas.
+
+#### Historia de usuario 4
+     COMO: Jugador LOL
+     QUIERO: Conocer los distintos niveles de ataque
+     PARA: Elegir al mejor grupo por cada partida y vencer al enemigo
+
+  **Criterios de aceptación:**
+    - El usuario podrá visualizar un botón con los 3 niveles de dificultad que poseen los campeones.
+    - El usuario podrá filtrar a sus campeones mediante los 3 niveles mencionado.
+    - El orden de los campeones filtrados serán por orden alfabético.
+    - El usuario podrá desfiltrar sus opciones seleccionadas.
+
+#### Historia de usuario 5
+     COMO: Jugador principiante LOL
+     QUIERO: Saber de qué trata el juego
+     PARA: Empezar a jugar
+
+  **Criterios de aceptación:**
+    - El usuario podrá ver un botón de hacks desplegable.
+    - El usuario podrá visualizar opciones de hacks, según el nivel en el que se encuentre (beginner o intermedio).
+    - El usuario encontrará información introductoria para saber de qué trata el juego (videos, foros y links).
+    - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+
+#### Historia de usuario 6
+     COMO: Jugador intermedio LOL
+     QUIERO: Mejorar mi técnica de juego
+     PARA: Empezar a ganar partidas
+
+  **Criterios de aceptación:**
+    - El usuario podrá ver un botón de hacks desplegable.
+    - El usuario podrá visualizar opciones de hacks, según el nivel en el que se encuentre (beginner o intermedio).
+    - El usuario encontrará información relevante como estadísticas de campeones, trucos, estrategias y links a foros donde se compartirán detalles de estrategia.
+    - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+
+#### Historia de usuario 7
+     COMO: Jugador LOL
+     QUIERO: Un link que me lleve a la plataforma oficial del Juego
+     PARA: Empezar a jugar!
+
+  **Criterios de aceptación:**
+    - El usuario podrá ver un botón que lo invite a jugar.
+    - El usuario podrá aterrizar a la plataforma de juego oficial para empezar sus partidas.
+
+### Diseño de la Interfaz de Usuario
+#### Prototipos de baja y alta fidelidad
+  En nuestro equipo de trabajo decidimos realizar 2 sketches en papel para poder discutir sobre cómo ambos bocetos resolverían los problemas del usuario.
+  [Prototipo 1](src/img/prototipo1.png)
+<!--   [Prototipo 2](src/img/prototipo2.png) -->
+
+  Tomando el feedback de ambos sketches decidimos crear 1 prototipo en alta (Figma) para poder testearlo con nuestros potenciales usuarios e iterarlo.
+  [Prototipo en Figma](https://bit.ly/3tmyb82)
+#### Testeos de usabilidad
+  En total testeamos a 4 potenciales usuarios y con el feedback recibido por cada 1 fuimos iterando hasta llegar al prototipo final.
+  El primer problema que encontramos es que nos estabamos diseñando nuestros sketches en base a las necesidades del usuario, sino en base a lo que nosotras creíamos que era lo correcto. Cuando hicimos el primer test, nos dimos cuenta de este detalle y comprendimos que debíamos diseñar pensando como el usuario.
+  El segundo problema que encontramos es diseñar los sketches y sus funcionalidades en base a los datos json que recibimos. Esto fue un reto grande porque teníamos datos un poco limitados, aún así pudimos resolver el problema gracias al feedback de Mari de LIM012 quien es una usuaria potencial del juego LOL y nos orientó como debería estar enfocado.
 # Data Lovers
 
 ## Índice
