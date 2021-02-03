@@ -1,9 +1,4 @@
-                            SQUAD UP
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
+                                             SQUAD UP
 ### Definición del producto
 
 Según la investigación que hemos realizado, encontramos lo siguiente:
@@ -30,94 +25,98 @@ Según la investigación que hemos realizado, encontramos lo siguiente:
 * El usuario, también, con 2 clicks puede acceder a toda la información que cada campeón tiene, sin necesidad de salir de esa página.
 * Por último decidimos enlazar un botón con la plataforma oficial de LOL para que el usuario pueda empezar a jugar y así darle la mejor experiencia posible.
 ### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
 #### Historia de usuario 1
-     COMO: Jugador LOL.
-     QUIERO: Conocer a todos los campeones de LOL.
-     PARA: Saber a cuál elegir para jugar.
+  COMO: Jugador LOL
+  QUIERO: Poder visualizar a los campeones
+  PARA: Saber quiénes son
 
-    *Criterios de aceptación*
-      - El usuario podrá encontrar un header con el logo y 3 botones que aterrizarán a vistas distintas. (Campeones, Hacks, Jugar).
-      - El usuario al entrar podrá ver una galería con todos los campeones por orden alfabético.
-      - El usuario podrá encontrar una barra de búsqueda para filtrar por nombre al campeón, además de 2 botones desplegables de roles y nivel de dificultad.
-      - El usuario podrá también podrá visualizar en la galería cada card de los campeones con lo siguiente::
-      --- El nombre de cada campeón
-      --- La imagen.
-      --- Botón de "+" para poder visualizar información más detallada del campeón.
+  **Criterios mínimos de aceptación**
+    - El usuario al entrar a la página de inicio podrá visualizar los cards de los 140 campeones con sus nombres.
+    - Por defecto el el botón "campeones" del navegador principal está marcado y activo.
 
 #### Historia de usuario 2
-     COMO: Jugador LOL
-     QUIERO: Encontrar específicamente a los campeones.
-     PARA: Conocer más sobre los campeones escogidos y sus características.
+  COMO: Jugardor LOL
+  QUIERO: Elegir a un campeón
+  PARA: Conocer más a detalle al campeón
 
-  **Criterios de aceptación:**
-    - El usuario podrá hacer la búsqueda mediante 1 nombre en específico.
-    - EL usuario también podrá hacer una búsqueda mediante el botón desplegable que contiene el nombre de cada campeón.
+  **Criterios mínimos de aceptación:**
+  - El usuario podrá filtrar en la galería los cards de los campeones mediante:
+  - Digitando el nombre de cada campeón en el input buscador
+  - Mediante una lista desplegable (dropdown)
+  - Esta lista filtrada se mostrará en orden alfabético.
+  - La lista además tendrá una opción para desfiltrar lo que previamente había seleccionado el usuario.
 
 #### Historia de usuario 3
-     COMO: Jugador LOL
-     QUIERO: Conocer los roles de los campeones
-     PARA: Poder elegir estratégicamente a los campeones que competirán en 1 partida
+  COMO: Jugardor LOL
+  QUIERO: Conocer los roles de los compeones
+  PARA: Identificar las habilidades que tiene cada uno
 
-  **Criterios de aceptación:**
-    - El usuario podrá visualizar los 6 roles que existen en LOL.
-    - El usuario podrá filtrar a los campeones según los roles que escoja.
-    - El usuario podrá ver en orden alfabético a todos los campeones seleccionados.
-    - El usuario podrá desfiltrar sus opciones seleccionadas.
+  **Criterios mínimos de aceptación:**
+  - El usuario podrá hacer click en un botón desplegable.
+  - Esta lista desplegada mostrará los 6 distintos roles que cumplen los campeones.
+  - La lista además tendrá una opción para desfiltrar lo que previamente había seleccionado el usuario.
+  - La lista se mostrará en orden alfabético.
 
 #### Historia de usuario 4
-     COMO: Jugador LOL
-     QUIERO: Conocer los distintos niveles de ataque
-     PARA: Elegir al mejor grupo por cada partida y vencer al enemigo
+    COMO: Jugardor LOL
+    QUIERO: Conocer los niveles de dificultad
+    PARA: Saber cuáles campones son los ofensivos y defensivos.
 
-  **Criterios de aceptación:**
-    - El usuario podrá visualizar un botón con los 3 niveles de dificultad que poseen los campeones.
-    - El usuario podrá filtrar a sus campeones mediante los 3 niveles mencionado.
-    - El orden de los campeones filtrados serán por orden alfabético.
-    - El usuario podrá desfiltrar sus opciones seleccionadas.
+  **Criterios mínimos de aceptación:**
+  - El usuario podrá hacer click en un botón desplegable.
+  - Esta lista desplegada mostrará los 3 distintos niveles de dificultad que cumplen los campeones.
+  - La lista además tendrá una opción para desfiltrar lo que previamente había seleccionado el usuario.
+  - La lista se mostrará en orden de jerarquía (de alta a baja)
 
 #### Historia de usuario 5
-     COMO: Jugador principiante LOL
-     QUIERO: Saber de qué trata el juego
-     PARA: Empezar a jugar
+  COMO: Jugardor LOL
+  QUIERO: Elegir a un campeón
+  PARA: Conocer más a detalle al campeón
 
-  **Criterios de aceptación:**
-    - El usuario podrá ver un botón de hacks desplegable.
-    - El usuario podrá visualizar opciones de hacks, según el nivel en el que se encuentre (beginner o intermedio).
-    - El usuario encontrará información introductoria para saber de qué trata el juego (videos, foros y links).
-    - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+  **Criterios mínimos de aceptación:**
+  - El usuario después de filtrar a 1 campeón digitando su nombre o mediante la selección del scroll, la pantalla mostrará sólo al campeón elegido.
+  - El usuario podrá visualizar un botón "más" dentro del card para que de click y el card se volteará.
+  - El usuario después de dar click el card se volteará para mostrar detalle de la información.
 
 #### Historia de usuario 6
-     COMO: Jugador intermedio LOL
-     QUIERO: Mejorar mi técnica de juego
-     PARA: Empezar a ganar partidas
+  COMO: Jugador LOL
+  QUIERO: Adquirir hacks del juego
+  PARA: Tener un buen performance de juego
 
-  **Criterios de aceptación:**
-    - El usuario podrá ver un botón de hacks desplegable.
-    - El usuario podrá visualizar opciones de hacks, según el nivel en el que se encuentre (beginner o intermedio).
-    - El usuario encontrará información relevante como estadísticas de campeones, trucos, estrategias y links a foros donde se compartirán detalles de estrategia.
-    - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+  **Criterios mínimos de aceptación:**
+  - El usuario podrá encontrar en el header un botón "hacks".
+  - El usuario al darle click, el botón se activará mediante un borde dorado.
+  - El botón mostrará una lista desplegable con 2 opciones (principiantes y conocedores).
 
 #### Historia de usuario 7
-     COMO: Jugador LOL
-     QUIERO: Un link que me lleve a la plataforma oficial del Juego
-     PARA: Empezar a jugar!
+  COMO: Jugador LOL principiante
+  QUIERO: Conocer acerca del juego
+  PARA: Empezar a jugar
 
-  **Criterios de aceptación:**
-    - El usuario podrá ver un botón que lo invite a jugar.
-    - El usuario podrá aterrizar a la plataforma de juego oficial para empezar sus partidas.
+  **Criterios mínimos de aceptación:**
+  - El usuario al dar click a la opción de principiante lo llevará a otra vista.
+  - Dicha vista tendrá toda la información introductoria para saber de qué trata el juego (videos, foros y links).
+  - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
 
+#### Historia de usuario 8
+  COMO: Jugador LOL intermedio
+  QUIERO: Mejorar mi técnica de juego
+  PARA: Empezar a ganar partidas
+
+  **Criterios mínimos de aceptación:**
+  - El usuario al dar click a la opción de conocedor lo llevará a otra vista.
+  - Dicha vista tendrá toda la información relevante como estadísticas de campeones, trucos, estrategias y links a foros donde se compartirán detalles de estrategia.
+  - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+
+#### Historia de usuario 9
+  COMO: Jugador LOL
+  QUIERO: Un link que me lleve a la plataforma oficial del Juego
+  PARA: Empezar a jugar!
+  
+  **Criterios mínimos de aceptación:**
+  - El usuario podrá ver un botón que lo invite a jugar.
+  - El usuario al dar click al botón "Jugar" , éste se activará y mostrará un borde dorado.
+  - El usuario podrá aterrizar a la plataforma de juego oficial para empezar sus partidas.
 ### Diseño de la Interfaz de Usuario
 #### Prototipos de baja y alta fidelidad
   En nuestro equipo de trabajo decidimos realizar 2 sketches en papel para poder discutir sobre cómo ambos bocetos resolverían los problemas del usuario.
