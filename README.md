@@ -2,7 +2,18 @@
 
 **Tabla de Contenido:**
 
-[TOCM]
+1. [Resumen del Proyecto](#id1)
+2. [League of Legends (LOL) - Base de datos elegida](#id2)
+3. [Investigación del Usuario Objetivo](#id3)
+4. [Historias de Usuario](#id4)
+5. [Crear prototipos para obtener feedback e iterar](#id5)
+6. [Proyecto Duplas](#id6)
+<div id='id1' />
+<div id='id2' />
+<div id='id3' />
+<div id='id4' />
+<div id='id5' />
+<div id='id6' />
 
 ------------
 
@@ -40,34 +51,125 @@ Decidimos trabajar está temática de juego porque nos pareció super interesant
 Para la creación de Historias de Usuario y determinar a nuestros usuarios potenciales realizamos encuestas online vía zoom con conocidos, familiares y amigos entre principiantes y conocedores del juego.
 
 Realizamos una pregunta abierta para dividir a nuestro público objetivo:
-**&rarr; ¿Conoces League of Legends, cuánto sabes del juego?**
+  + ¿Conoces League of Legends, cuánto sabes del juego?**
 
 Dependiendo la respuesta hicimos 3 preguntas más para cada tipo de usuario:
 
 **Principiantes:**
-&rarr; 1. ¿Qué sabes de League of Legends?
-&rarr; 2. ¿Te gustaría jugarlo?
-&rarr; 3. ¿Con que información te gustaría contar para empezar a jugarlo?
+  + ¿Qué sabes de League of Legends?
+  + ¿Te gustaría jugarlo?
+  + ¿Con que información te gustaría contar para empezar a jugarlo?
 
 **Conocedores:**
-&rarr; 1. ¿Juegas actualmente, o cuándo fue la última vez que lo jugaste?
-&rarr; 2. ¿Que información te parece relevante conocer para avanzar en el juego?
-&rarr; 3. ¿Qué información específica te gustaría conocer para mejorar en el juego?
+  + ¿Juegas actualmente, o cuándo fue la última vez que lo jugaste?
+  + ¿Que información te parece relevante conocer para avanzar en el juego?
+  + ¿Qué información específica te gustaría conocer para mejorar en el juego?
 
 Como resultado creamos las siguientes HU:
 
 ###### Historia de usuario 1
-  COMO: Jugador LOL
-  QUIERO: Poder visualizar a los campeones
-  PARA: Saber quiénes son
+  + COMO: Jugador LOL
+  + QUIERO: Poder visualizar a los campeones
+  + PARA: Saber quiénes son
+  
+###### Criterios mínimos de aceptación
+  - El usuario al entrar a la página de inicio podrá visualizar los cards de los 140 campeones con sus nombres.
+  - Por defecto el el botón "campeones" del navegador principal está marcado y activo.
+
+###### Historia de usuario 2
+  + COMO: Jugardor LOL
+  + QUIERO: Elegir a un campeón
+  + PARA: Conocer más a detalle al campeón
+  
+###### Criterios mínimos de aceptación
+  - El usuario podrá filtrar en la galería los cards de los campeones mediante:
+  - Digitando el nombre de cada campeón en el input buscador
+  - Mediante una lista desplegable (dropdown)
+  - Esta lista filtrada se mostrará en orden alfabético.
+  - La lista además tendrá una opción para desfiltrar lo que previamente había seleccionado el usuario.
+  
+###### Historia de usuario 3
+  + COMO: Jugador LOL
+  + QUIERO: Conocer los roles de los compeones
+  + PARA: Identificar las habilidades que tiene cada uno
+  
+###### Criterios mínimos de aceptación
+  - El usuario podrá hacer click en un botón desplegable.
+  - Esta lista desplegada mostrará los 6 distintos roles que cumplen los campeones.
+  - La lista además tendrá una opción para desfiltrar lo que previamente había seleccionado el usuario.
+  - La lista se mostrará en orden alfabético.
+  
+###### Historia de usuario 4
+  + COMO: Jugador LOL
+  + QUIERO: Conocer los niveles de dificultad
+  + PARA: Saber cuáles campones son los ofensivos y defensivos.
+  
+###### Criterios mínimos de aceptación
+  - El usuario podrá hacer click en un botón desplegable.
+  - Esta lista desplegada mostrará los 3 distintos niveles de dificultad que cumplen los campeones.
+  - La lista además tendrá una opción para desfiltrar lo que previamente había seleccionado el usuario.
+  - La lista se mostrará en orden de jerarquía (de alta a baja)
+  
+###### Historia de usuario 5
+  + COMO: Jugador LOL
+  + QUIERO: Elegir a un campeón
+  + PARA: Conocer más a detalle al campeón
+  
+###### Criterios mínimos de aceptación
+  - El usuario después de filtrar a 1 campeón digitando su nombre o mediante la selección del scroll, la pantalla mostrará sólo al campeón elegido.
+  - El usuario podrá visualizar un botón "más" dentro del card para que de click y el card se volteará.
+  - El usuario después de dar click el card se volteará para mostrar detalle de la información.
+
+###### Historia de usuario 6
+  + COMO: Jugador LOL
+  + QUIERO: Adquirir hacks del juego
+  + PARA: Tener un buen performance de juego
+  
+###### Criterios mínimos de aceptación
+  - El usuario podrá encontrar en el header un botón "hacks".
+  - El usuario al darle click, el botón se activará mediante un borde dorado.
+  - El botón mostrará una lista desplegable con 2 opciones (principiantes y conocedores)
+
+###### Historia de usuario 7
+  + COMO: Jugador LOL principiante
+  + QUIERO: Conocer acerca del juego
+  + PARA: Empezar a jugar
+  
+###### Criterios mínimos de aceptación
+  - El usuario al dar click a la opción de principiante lo llevará a otra vista.
+  - Dicha vista tendrá toda la información introductoria para saber de qué trata el juego (videos, foros y links).
+  - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.- El usuario al dar click a la opción de principiante lo llevará a otra vista.
+  - Dicha vista tendrá toda la información introductoria para saber de qué trata el juego (videos, foros y links).
+  - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+
+###### Historia de usuario 8
+  + COMO: Jugador LOL intermedio
+  + QUIERO: Mejorar mi técnica de juego
+  + PARA: Empezar a ganar partidas
+  
+###### Criterios mínimos de aceptación
+  - El usuario al dar click a la opción de conocedor lo llevará a otra vista.
+  - Dicha vista tendrá toda la información relevante como estadísticas de campeones, trucos, estrategias y links a foros donde se compartirán detalles de estrategia.
+  - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+  
+###### Historia de usuario 9
+  + COMO: Jugador LOL
+  + QUIERO: Un link que me lleve a la plataforma oficial del Juego
+  + PARA: Empezar a jugar!
+  
+###### Criterios mínimos de aceptación
+  - El usuario podrá ver un botón que lo invite a jugar.
+  - El usuario al dar click al botón "Jugar" , éste se activará y mostrará un borde dorado.
+  - El usuario podrá aterrizar a la plataforma de juego oficial para empezar sus partidas.
 
 ------------
-#####5.Crear prototipos para obtener feedback e iterar.
+##### 5. Crear prototipos para obtener feedback e iterar.
 ###### &hearts;Prototipos de baja fidelidad:
 Luego de información recabada realizamos nuestros prototipos en papel, los cuales no tienen el aspecto real de la interfaz que testeamos pero cuentan con la información que permite la interacción entre la interfaz y el usuario.
 
 [Prototipo 1](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/prototipo1.png "Prototipo 1") / [Prototipo 2](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo2.jpg "Prototipo 2") / [Prototipo 3](http:/https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo%202.1.jpg/ "Prototipo 3") / [Prototipo 4](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo%202.2.jpg "Prototipo 4")
-######&hearts;Prototipos de alta fidelidad:
+
+###### &hearts;Prototipos de alta fidelidad:
 Para el prototipado de alta fidelidad utilizamos figma el cual utilizamos para el test, el cual refleja la interfaz real en la mayor medida posible.
 En este diseño aplicamos los principios de **diseño visual:**
 Resaltamos el **tamaño** en los card para captar la atención del usuario a primera vista, pues, es el foco central de nuestro producto y la información necesaria para los jugadores.
@@ -75,16 +177,28 @@ El diseño se basó en los **colores** utilizados en la plataforma oficial de LO
 
 [Jeraquía Visual](http://https://blog.aulaformativa.com/fundamentos-del-diseno-como-crear-jerarquia-visual/ "Jeraquía Visual") / [Significado de los colores en Marketing](http://https://blog.aulaformativa.com/fundamentos-del-diseno-como-crear-jerarquia-visual/ "Significado de los colores en Marketing")
 
-**&raquo;Modelo 1-Testeado / Cambios:**
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/figma%20primero.png)
+
+**&raquo;Modelo 1-Final / Cambios:**
+
 Luego de los feedback respectivos anotamos los cambios a realizar en cuanto al diseño.
-[Figma 1](http://https://www.figma.com/proto/LGfFj76Uzyb6LRqmhSncEK/Untitled?node-id=0%3A3&scaling=scale-down "Figma 1")
+
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/cambios.png)
+
+[Ver Figma 1](https://www.figma.com/proto/LGfFj76Uzyb6LRqmhSncEK/Untitled?node-id=0%3A3&scaling=scale-down "Figma 1")
+
+
 
 **&raquo;Modelo 2-Final / Cambios:**
+
 Luego de los cambios indicados en el feedback, así quedó nuestro diseño:
-[Figma 2](hhttps://www.figma.com/proto/egNsFr51yxKeatjB5HQki0/Untitled?node-id=0%3A3&scaling=scale-downttp:// "Figma 2")
+
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Figma%20final.png)
+
+[Ver Figma 2](https://www.figma.com/proto/egNsFr51yxKeatjB5HQki0/Untitled?node-id=0%3A3&scaling=scale-down "Figma 2")
 
 ------------
 
-**Proyecto Duplas:**
+**6.Proyecto Duplas:**
 - [Mery Vera](https://github.com/meryvera "Mery Vera")
 - [Kelly Márquez](https://github.com/kelmita22 "Kelly Márquez")
