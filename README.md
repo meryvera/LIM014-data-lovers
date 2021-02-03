@@ -1,4 +1,33 @@
-### Definición del producto
+# Proyecto Data Lovers - LOL
+
+**Tabla de Contenido:**
+
+[TOCM]
+
+------------
+
+
+##### 1. Resumen del Proyecto:
+En este proyecto **construirás una _página web_ para visualizar un
+_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario necesita.
+
+Como entregable final tendrás una página web que permita **visualizar la data, filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado nos referimos a distintos cálculos que puedes hacer con la data para mostrar información aún más relevante para los usuarios (promedio, el valor máximo o mínimo, etc).
+
+Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que explores y decidas con qué temática te interesa trabajar.
+
+Una vez que definas tu área de interés, busca entender quién es tu usuario
+y qué necesita saber o ver exactamente; luego podrás construir la interfaz que le ayude a interactuar y entender mejor esos datos.
+
+------------
+##### 2. League of Legends (LOL) - Base de datos elegida:
+Decidimos trabajar está temática de juego porque nos pareció super interesante la información que encontramos en la investigación.
+* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
+  Este set de datos muestra la lista de campeones en una liga del
+  juego League of Legends (LoL).
+  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+
+------------
+##### 3. Investigación del Usuario Objetivo
 ![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po1.png)
 ![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/PO2.png)
 ![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/PO3.png)
@@ -6,581 +35,53 @@
 ![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po7.png)
 ![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po9.png)
 
-Según la investigación que hemos realizado, encontramos lo siguiente:
-**características de nuestro público objetivo:**
-* Usuarios entre 15 y 35 años.
-* 60% son hombres y 40% son mujeres.
-* Los niveles de experiencia de nuestros usuarios son principiantes y conocedores.
-* Usuarios multinacionales que entienden el idioma castellano.
-* Usuarios tecnológicos.
-* Usuarios de clase media y alta.
-**Problemas que presentan los usuarios:**
-* Los principiantes no conocen a los jugadores del juego (140 campeones), no conocen sus roles, ni los niveles de ficultad, ni sus habilidades.
-* Los conocedores no conocen de estadísticas que les permitan estimar sus tácticas y estrategias de juego.
-**Solución a los problemas de nuestro producto digital:**
-* Permite a los usuarios escoger al campeón adecuado.
-* Permite a los usuarios conocer los roles (6) que tienen los campeones.
-* Permite a los usuarios conocer cuáles son los campeones más poderosos o defensivos.
-* Permite a los usuarios conocer las habilidades principales y secundarias de los campeones.
-* Permite a los usuarios conocer hacks para un mejor performance de las partidas jugadas.
-**Proceso de diseño del producto digital:**
-* Nuestro diseño se basó en la utilización de los colores utilizados en la plataforma oficial de LOL, esto con el fin de darle el look and feel del videojuego real.
-* Según la investigación a nuestros usuarios, entendimos que lo principal que necesitaban ver era al total de campeones y poder filtrarlos por su nombre, rol y nivel de dificultad. Ante ello, decidimos estructurar el contenido del site inicial de tal modo que el usuario pueda filtrar a los campeones de la manera más eficiente.
-* Además, para darle información relevante a los jugadores principiantes y conocedores, decidimos agregar otra página para que el usuario pueda nevegar en dicha información. Todo esto dándole click al botón "hacks".
-* El usuario, también, con 2 clicks puede acceder a toda la información que cada campeón tiene, sin necesidad de salir de esa página.
-* Por último decidimos enlazar un botón con la plataforma oficial de LOL para que el usuario pueda empezar a jugar y así darle la mejor experiencia posible.
-### Historias de usuario
+------------
+##### 4. Historias de Usuario
+Para la creación de Historias de Usuario y determinar a nuestros usuarios potenciales realizamos encuestas online vía zoom con conocidos, familiares y amigos entre principiantes y conocedores del juego.
 
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
+Realizamos una pregunta abierta para dividir a nuestro público objetivo:
+**&rarr; ¿Conoces League of Legends, cuánto sabes del juego?**
 
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
+Dependiendo la respuesta hicimos 3 preguntas más para cada tipo de usuario:
 
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
+**Principiantes:**
+&rarr; 1. ¿Qué sabes de League of Legends?
+&rarr; 2. ¿Te gustaría jugarlo?
+&rarr; 3. ¿Con que información te gustaría contar para empezar a jugarlo?
 
-#### Historia de usuario 1
-     COMO: Jugador LOL.
-     QUIERO: Conocer a todos los campeones de LOL.
-     PARA: Saber a cuál elegir para jugar.
+**Conocedores:**
+&rarr; 1. ¿Juegas actualmente, o cuándo fue la última vez que lo jugaste?
+&rarr; 2. ¿Que información te parece relevante conocer para avanzar en el juego?
+&rarr; 3. ¿Qué información específica te gustaría conocer para mejorar en el juego?
 
-    *Criterios de aceptación*
-      - El usuario podrá encontrar un header con el logo y 3 botones que aterrizarán a vistas distintas. (Campeones, Hacks, Jugar).
-      - El usuario al entrar podrá ver una galería con todos los campeones por orden alfabético.
-      - El usuario podrá encontrar una barra de búsqueda para filtrar por nombre al campeón, además de 2 botones desplegables de roles y nivel de dificultad.
-      - El usuario podrá también podrá visualizar en la galería cada card de los campeones con lo siguiente::
-      --- El nombre de cada campeón
-      --- La imagen.
-      --- Botón de "+" para poder visualizar información más detallada del campeón.
+Como resultado creamos las siguientes HU:
 
-#### Historia de usuario 2
-     COMO: Jugador LOL
-     QUIERO: Encontrar específicamente a los campeones.
-     PARA: Conocer más sobre los campeones escogidos y sus características.
 
-  **Criterios de aceptación:**
-    - El usuario podrá hacer la búsqueda mediante 1 nombre en específico.
-    - EL usuario también podrá hacer una búsqueda mediante el botón desplegable que contiene el nombre de cada campeón.
 
-#### Historia de usuario 3
-     COMO: Jugador LOL
-     QUIERO: Conocer los roles de los campeones
-     PARA: Poder elegir estratégicamente a los campeones que competirán en 1 partida
+------------
+#####5.Crear prototipos para obtener feedback e iterar.
+###### &hearts;Prototipos de baja fidelidad:
+Luego de información recabada realizamos nuestros prototipos en papel, los cuales no tienen el aspecto real de la interfaz que testeamos pero cuentan con la información que permite la interacción entre la interfaz y el usuario.
 
-  **Criterios de aceptación:**
-    - El usuario podrá visualizar los 6 roles que existen en LOL.
-    - El usuario podrá filtrar a los campeones según los roles que escoja.
-    - El usuario podrá ver en orden alfabético a todos los campeones seleccionados.
-    - El usuario podrá desfiltrar sus opciones seleccionadas.
+[Prototipo 1](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/prototipo1.png "Prototipo 1") / [Prototipo 2](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo2.jpg "Prototipo 2") / [Prototipo 3](http:/https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo%202.1.jpg/ "Prototipo 3") / [Prototipo 4](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo%202.2.jpg "Prototipo 4")
+######&hearts;Prototipos de alta fidelidad:  
+Para el prototipado de alta fidelidad utilizamos figma el cual utilizamos para el test, el cual refleja la interfaz real en la mayor medida posible. 
+En este diseño aplicamos los principios de **diseño visual:**
+Resaltamos el **tamaño** en los card para captar la atención del usuario a primera vista, pues, es el foco central de nuestro producto y la información necesaria para los jugadores.
+El diseño se basó en los **colores** utilizados en la plataforma oficial de LOL, esto con el fin de darle el look and feel del videojuego real, resaltando las tonalidades grises y negras asociadas al conocimiento, fuerza y poder, **contrastándolo** con dorados basicamente en los botones quenavegación, que representa alegría. Tratamos de darle **proximidad** al diseño con el fin de agrupar los cards y ordenar las distribuciones de contenido, buscando generar una **alineación** adecuada y evitar que esta **repetición** de contenido genere mucho peso al diseño.
 
-#### Historia de usuario 4
-     COMO: Jugador LOL
-     QUIERO: Conocer los distintos niveles de ataque
-     PARA: Elegir al mejor grupo por cada partida y vencer al enemigo
+[Jeraquía Visual](http://https://blog.aulaformativa.com/fundamentos-del-diseno-como-crear-jerarquia-visual/ "Jeraquía Visual") / [Significado de los colores en Marketing](http://https://blog.aulaformativa.com/fundamentos-del-diseno-como-crear-jerarquia-visual/ "Significado de los colores en Marketing")
 
-  **Criterios de aceptación:**
-    - El usuario podrá visualizar un botón con los 3 niveles de dificultad que poseen los campeones.
-    - El usuario podrá filtrar a sus campeones mediante los 3 niveles mencionado.
-    - El orden de los campeones filtrados serán por orden alfabético.
-    - El usuario podrá desfiltrar sus opciones seleccionadas.
+**&raquo;Modelo 1-Testeado / Cambios:**
+Luego de los feedback respectivos anotamos los cambios a realizar en cuanto al diseño.
+[Figma 1](http://https://www.figma.com/proto/LGfFj76Uzyb6LRqmhSncEK/Untitled?node-id=0%3A3&scaling=scale-down "Figma 1")
 
-#### Historia de usuario 5
-     COMO: Jugador principiante LOL
-     QUIERO: Saber de qué trata el juego
-     PARA: Empezar a jugar
+**&raquo;Modelo 2-Final / Cambios:**
+Luego de los cambios indicados en el feedback, así quedó nuestro diseño:
+[Figma 2](hhttps://www.figma.com/proto/egNsFr51yxKeatjB5HQki0/Untitled?node-id=0%3A3&scaling=scale-downttp:// "Figma 2")
 
-  **Criterios de aceptación:**
-    - El usuario podrá ver un botón de hacks desplegable.
-    - El usuario podrá visualizar opciones de hacks, según el nivel en el que se encuentre (beginner o intermedio).
-    - El usuario encontrará información introductoria para saber de qué trata el juego (videos, foros y links).
-    - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+------------
 
-#### Historia de usuario 6
-     COMO: Jugador intermedio LOL
-     QUIERO: Mejorar mi técnica de juego
-     PARA: Empezar a ganar partidas
-
-  **Criterios de aceptación:**
-    - El usuario podrá ver un botón de hacks desplegable.
-    - El usuario podrá visualizar opciones de hacks, según el nivel en el que se encuentre (beginner o intermedio).
-    - El usuario encontrará información relevante como estadísticas de campeones, trucos, estrategias y links a foros donde se compartirán detalles de estrategia.
-    - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
-
-#### Historia de usuario 7
-     COMO: Jugador LOL
-     QUIERO: Un link que me lleve a la plataforma oficial del Juego
-     PARA: Empezar a jugar!
-
-  **Criterios de aceptación:**
-    - El usuario podrá ver un botón que lo invite a jugar.
-    - El usuario podrá aterrizar a la plataforma de juego oficial para empezar sus partidas.
-
-### Diseño de la Interfaz de Usuario
-#### Prototipos de baja y alta fidelidad
-  En nuestro equipo de trabajo decidimos realizar 2 sketches en papel para poder discutir sobre cómo ambos bocetos resolverían los problemas del usuario.
-  [Prototipo 1](src/img/prototipo1.png)
-<!--   [Prototipo 2](src/img/prototipo2.png) -->
-
-  Tomando el feedback de ambos sketches decidimos crear 1 prototipo en alta (Figma) para poder testearlo con nuestros potenciales usuarios e iterarlo.
-  [Prototipo en Figma](https://bit.ly/3tmyb82)
-#### Testeos de usabilidad
-  En total testeamos a 4 potenciales usuarios y con el feedback recibido por cada 1 fuimos iterando hasta llegar al prototipo final.
-  El primer problema que encontramos es que nos estabamos diseñando nuestros sketches en base a las necesidades del usuario, sino en base a lo que nosotras creíamos que era lo correcto. Cuando hicimos el primer test, nos dimos cuenta de este detalle y comprendimos que debíamos diseñar pensando como el usuario.
-  El segundo problema que encontramos es diseñar los sketches y sus funcionalidades en base a los datos json que recibimos. Esto fue un reto grande porque teníamos datos un poco limitados, aún así pudimos resolver el problema gracias al feedback de Mari de LIM012 quien es una usuaria potencial del juego LOL y nos orientó como debería estar enfocado.
-# Data Lovers
-
-## Índice
-
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
-
-***
-
-## 1. Preámbulo
-
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-## 2. Resumen del proyecto
-
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
-
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
-
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
-
-Estos son datos que te proponemos:
-
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
-
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
-
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
-
-* [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
-  Este set nos proporciona la lista de los atletas que ganaron medallas en las
-  olímpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](/src/data/athletes/README.md)
-
-## 3. Objetivos de aprendizaje
-
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
-
-### HTML y CSS
-
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] [Uso de selectores de CSS.](https://css-tricks.com/almanac/selectors/)
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-* [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
-### DOM y Web APIs
-
-* [ ] [Uso de selectores del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Localizando_elementos_DOM_usando_selectores).
-* [ ] [Manejo de eventos del DOM.](https://www.w3schools.com/js/js_events.asp)
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
-
-### JavaScript
-
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] [Uso de bucles (for | for..in | for..of | while)](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Bucles_e_iteraci%C3%B3n)
-* [ ] [Uso de funciones (parámetros | argumentos | valor de retorno)](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Funciones)
-* [ ] [Manipular arrays (filter | map | sort | reduce)](https://code.tutsplus.com/es/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
-* [ ] [Manipular objects (key | value)](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object)
-* [ ] [Uso ES modules](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/M%C3%B3dulos) ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] [Diferenciar entre expression y statements.](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [ ] [Diferenciar entre tipos de datos atómicos y estructurados.](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures)
-
-### Testing
-
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
-
-### Estructura del código y guía de estilo
-
-* [ ] [Organizar y dividir el código en módulos (Modularización)](https://medium.com/@sebastianpaduano/modularizaci%C3%B3n-en-javascript-538bd6c75fa)
-* [ ] Uso de identificadores descriptivos ([Nomenclatura](http://snowdream.github.io/javascript-style-guide/javascript-style-guide/es/naming-conventions.html) | [Semántica](https://geekytheory.com/semantica-coder))
-* [ ] Uso de linter (ESLINT)
-
-### Git y GitHub
-
-* [ ] [Uso de comandos de git (add | commit | pull | status | push)](https://github.com/jlord/git-it-electron)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | |[tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging))
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
-## 4. Consideraciones generales
-
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 4 semanas.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Los criterios para considerar que has completado este proyecto son:
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
-### Diseño de la Interfaz de Usuario
-
-#### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
-   etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
-
-### Pruebas unitarias
-
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
-
-## 6. Hacker edition
-
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-Features/características extra sugeridas:
-
-* En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json` de
-  de cada set datos.
-* Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como
-  [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-* 100% Coverage
-
-## 7. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#6-hacker-edition) más arriba.
-
-No se debe utilizar la _pseudo-variable_ `this`.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
-
-```text
-.
-├── EXTRA.md
-├── README.md
-├── package.json
-├── src
-|  ├── data (según con qué data trabajes)
-|  |  ├── lol
-|  |  |  ├── lol.js
-|  |  |  ├── lol.json
-|  |  |  └── README.md
-|  |  ├── pokemon
-|  |  |  ├── pokemon.js
-|  |  |  ├── pokemon.json
-|  |  |  └── README.md
-|  |  └── rickandmorty
-|  |     ├── rickandmorty.js
-|  |     └── rickandmorty.json
-|  |     └── README.md
-|  |  └── athletes
-|  |     ├── athletes.js
-|  |     └── athletes.json
-|  |     └── README.md
-|  ├── data.js
-|  ├── index.html
-|  ├── main.js
-|  └── style.css
-└── test
-   └── data.spec.js
-
-directory: 6 file: 17
-```
-
-### `src/index.html`
-
-Como en el proyecto anterior, existe un archivo `index.html`. Como ya sabes,
-acá va la página que se mostrará al usuario. También nos sirve para indicar
-qué scripts se usarán y unir todo lo que hemos hecho.
-
-### `src/main.js`
-
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_), ....
-
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
-
-En este archivo encontrarás una serie de _imports_ _comentados_. Para _cargar_
-las diferentes fuentes de datos tendrás que _descomentar_ la línea
-correspondiente.
-
-Por ejemplo, si "descomentamos" la siguiente línea:
-
-```js
-// import data from './data/pokemon/pokemon.js';
-```
-
-La línea quedaría así:
-
-```js
-import data from './data/pokemon/pokemon.js';
-```
-
-Y ahora tendríamos la variable `data` disponible en el script `src/main.js`.
-
-### `src/data.js`
-
-El corazón de este proyecto es la manipulación de datos a través de arreglos
-y objetos.
-
-Te recomendamos que este archivo contenga toda la funcionalidad que corresponda
-a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
-
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
-
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
-
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
-
-Estos nombres de funciones y de parámetros son solamente referenciales, lo que
-decidas depende de tu propia implementación.
-
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
-
-### `src/data`
-
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#6-hacker-edition)).
-
-### `test/data.spec.js`
-
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
-
-## 8. Pistas, tips y lecturas complementarias
-
-### Primeros pasos
-
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
-
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuario de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
-
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
-
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu *fork* a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. Para ver la interfaz de tu programa en el navegador, usa el comando
-  `npm start` para arrancar el servidor web y dirígete a
-  `http://localhost:5000` en tu navegador.
-6. A codear se ha dicho! :rocket:
-
-### Contenido de referencia
-
-#### Diseño de experiencia de usuario (User Experience Design)
-
-* Investigación con usuarios / entrevistas
-* Principios de diseño visual
-
-#### Desarrollo Front-end
-
-* Unidad de testing en curso de JavaScript en LMS.
-* Unidad de arreglos en curso de JavaScript en LMS.
-* Unidad de objetos en curso de JavaScript en LMS.
-* Unidad de funciones en curso de JavaScript en LMS.
-* Unidad de DOM en curso de Browser JavaScript en LMS.
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-* [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-* [expresión vs sentencia](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [datos atómicos vs datos estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
-
-#### Herramientas
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
-
-#### Organización del Trabajo
-
-* [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
-  Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
-* [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-* [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
-
-## 9. Checklist
-
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
+**Proyecto Duplas:**
+- [Mery Vera](https://github.com/meryvera "Mery Vera")
+- [Kelly Márquez](https://github.com/kelmita22 "Kelly Márquez")
