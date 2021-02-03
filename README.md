@@ -1,10 +1,10 @@
-                            SQUAD UP
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
 ### Definición del producto
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po1.png)
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/PO2.png)
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/PO3.png)
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po6.png)
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po7.png)
+![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/po9.png)
 
 Según la investigación que hemos realizado, encontramos lo siguiente:
 **características de nuestro público objetivo:**
