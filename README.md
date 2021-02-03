@@ -56,7 +56,10 @@ Dependiendo la respuesta hicimos 3 preguntas más para cada tipo de usuario:
 
 Como resultado creamos las siguientes HU:
 
-
+###### Historia de usuario 1
+  COMO: Jugador LOL
+  QUIERO: Poder visualizar a los campeones
+  PARA: Saber quiénes son
 
 ------------
 #####5.Crear prototipos para obtener feedback e iterar.
@@ -64,8 +67,8 @@ Como resultado creamos las siguientes HU:
 Luego de información recabada realizamos nuestros prototipos en papel, los cuales no tienen el aspecto real de la interfaz que testeamos pero cuentan con la información que permite la interacción entre la interfaz y el usuario.
 
 [Prototipo 1](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/prototipo1.png "Prototipo 1") / [Prototipo 2](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo2.jpg "Prototipo 2") / [Prototipo 3](http:/https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo%202.1.jpg/ "Prototipo 3") / [Prototipo 4](http://https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/Prototipo%202.2.jpg "Prototipo 4")
-######&hearts;Prototipos de alta fidelidad:  
-Para el prototipado de alta fidelidad utilizamos figma el cual utilizamos para el test, el cual refleja la interfaz real en la mayor medida posible. 
+######&hearts;Prototipos de alta fidelidad:
+Para el prototipado de alta fidelidad utilizamos figma el cual utilizamos para el test, el cual refleja la interfaz real en la mayor medida posible.
 En este diseño aplicamos los principios de **diseño visual:**
 Resaltamos el **tamaño** en los card para captar la atención del usuario a primera vista, pues, es el foco central de nuestro producto y la información necesaria para los jugadores.
 El diseño se basó en los **colores** utilizados en la plataforma oficial de LOL, esto con el fin de darle el look and feel del videojuego real, resaltando las tonalidades grises y negras asociadas al conocimiento, fuerza y poder, **contrastándolo** con dorados basicamente en los botones quenavegación, que representa alegría. Tratamos de darle **proximidad** al diseño con el fin de agrupar los cards y ordenar las distribuciones de contenido, buscando generar una **alineación** adecuada y evitar que esta **repetición** de contenido genere mucho peso al diseño.
