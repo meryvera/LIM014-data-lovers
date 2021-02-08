@@ -75,6 +75,23 @@ Como resultado creamos las siguientes HU:
 ###### Criterios mínimos de aceptación
   - El usuario al entrar a la página de inicio podrá visualizar los cards de los 140 campeones con sus nombres.
   - Por defecto el el botón "campeones" del navegador principal está marcado y activo.
+  
+  ![](https://github.com/kelmita22/LIM014-data-lovers/blob/main/src/img/HU1.jpeg)
+  
+  ###### Test de Usabilidad y Cierre Historia 1
+  **Creación de Interfaz:**
+  
+  * Header: Logo y botones de navegación 
+  
+  * Main: Banner / Barra de filtro para campeones (roles , nivel de dificultad)
+  
+  * Card: Carga de data Json para mostrar en pantalla, manipulación de arrays y objetos.
+  
+  **Testeo:**
+  * Mejorar el logo de la página porque el nombre se pierde por el tamaño.
+  
+  * El botón "+" debe respetar el patrón de jerarquía de color (no usar negro) y darle padding al lado derecho.
+  
 
 ###### Historia de usuario 2
   + COMO: Jugardor LOL
