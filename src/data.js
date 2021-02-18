@@ -1,21 +1,40 @@
-// estas funciones son de ejemplo
+// FUNCION MODULO DE FILTRADO DE CAMPEONES
+export const filterChampion = (data, selected) =>{
+  let filteredChampion = data.filter(champion => champion[1].id == selected);
+  return filteredChampion;
+}
 
-// export const example = () => {
-//   return 'example';
-// };
+// FUNCION PARA ORDEN DESCENDENTE 
+export const sortChampionsDes = (data) =>{
+  const AllChampionsSort = data.sort((prev, next) => {
+    if(prev < next) return 1;
+    if(prev > next) return -1;
+     return 0;
+  })
+  return AllChampionsSort;
+}
 
-// export const anotherExample = () => {
-//   return 'OMG';
-// };
+// FUNCION MODULO DE FILTRADO DE ROLES
+export const filterRoles = (data, selected) => { 
+let filteredRoles = data.filter(data => data[1].tags[0] == selected || data[1].tags[1] == selected); 
+return filteredRoles; 
+}; 
 
-export {filterRols};
-const filterRols = {
-  sortData: function(data, condition){
-  }
-};
+// FUNCION MODULO DE FILTRADO DE NIVELES 
+export const filterLevels = (data, selected) => { 
+let filteredLevelLolbajo = data.filter(data => data[1].info.difficulty <= 3); 
+let filteredLevelLolmoderado = data.filter(data => data[1].info.difficulty >= 4 && data[1].info.difficulty <= 6); 
+let filteredLevelLolalto = data.filter(data => data[1].info.difficulty >= 7); 
 
+if (selected == "Bajo"){ 
+return (filteredLevelLolbajo);
+} else if (selected == "Moderado"){ 
+return (filteredLevelLolmoderado);
+}else if (selected == "Alto"){ 
+return (filteredLevelLolalto);
+}
+}
+  
+  
+  
 
-// * Función para Filtrar
-//  Se comparan los valores que entran como tags para filtrar
-// const filterData = (data, condition) => {
-// };

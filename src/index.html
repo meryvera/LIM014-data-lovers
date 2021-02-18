@@ -2,9 +2,9 @@
 <html>
   <head>
      <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+    <title>Data-lovers</title>
     <link rel="stylesheet" href="style.css"/>
-
   </head>
 
   <body>
@@ -12,7 +12,7 @@
     <header>
       <!--Logo-->
       <div class="container_nav">
-       <img src="img/logo.png" alt="logo" id="logo">
+       <img src="img/lolol.png" alt="logo" class="logo">
       <!--listas de navegación-->
       <nav class="navigation">
        <ul class="menu">
@@ -35,41 +35,36 @@
       <div class="wrapper">
         <section class="navbar-container">
           <article class="search">
-            <input placeholder="Buscar campeón">
-            <img src="./img/lupa.png">
+            <div>
+               <!--Datalist main.js-->
+              <input class="championsAll" type="search" name="championsall" id="search" list="championsLol" placeholder="Buscar Campeón">
+            </div>
+            <datalist id="championsLol" class="championAll">
+              <option class="oplist" value="Todos los campeones" id="optionAllChampions">Todos los campeones</option>
+              <option class="oplist" value="Orden Descendente" id="sortLolChampions">Orden Descendente</option>
+            </datalist>
           </article>
+          <!--Filtro por roles main.js-->
           <article class="roles">
-            <div>
-              <h2>Roles de Campeones</h2>
-              <ul>
-                <li><a name="tags" value="Fighter" href="" id="t1">Luchador</a></li>
-                <li><a name="tags" value="Marksman" href="" id="t2">Tirador</a></li>
-                <li><a name="tags" value="Mage" href="" id="t3">Mago o hechicero</a></li>
-                <li><a name="tags" value="Assassin" href="" id="t4">Asesino</a></li>
-                <li><a name="tags" value="Tank" href="" id="t5">Tanque</a></li>
-                <li><a name="tags" value="Support" href="" id="t6">Apoyo o soporte</a></li>
-              </ul>
-            </div>
-            <svg class="icon" id="rolesIcon" viewBox="0 0 8.69 4.69">
-              <path class="" d="M.35.37l4 3.64 4-3.64"></path>
-              <path class="" d="M2.75.01l1.6 1.45L5.95.01z"></path>
-            </svg>
+            <select id="rolesLol" name="rolesLol">
+              <option value="BackAllRoles" href="" id="t0">Roles de Campeones</option>
+              <option value="Fighter" href="" id="t1">Luchador</option>
+              <option value="Marksman" href="" id="t2">Tirador</option>
+              <option value="Mage" href="" id="t3">Mago o hechicero</option>
+              <option value="Assassin" href="" id="t4">Asesino</option>
+              <option value="Tank" href="" id="t5">Tanque</option>
+              <option value="Support" href="" id="t6">Apoyo o soporte</option>
+            </select>
           </article>
-          </article>
+          <!--Filtro por niveles main.js-->
           <article class="levels">
-            <div>
-              <h2>Nivel de dificultad</h2>
-              <ul>
-                <li><a href="">Leve</a></li>
-                <li><a href="">Moderado</a></li>
-                <li><a href="">Avanzado</a></li>
-              </ul>
-            </div>
-            <svg class="icon" id="levelsIcon" viewBox="0 0 8.69 4.69">
-              <path class="" d="M.35.37l4 3.64 4-3.64"></path>
-              <path class="" d="M2.75.01l1.6 1.45L5.95.01z"></path>
-            </svg>
-          </article>
+            <select id="levelsLol">
+             <option value="BackAllLevels">Niveles de Dificultad</option>
+             <option value="Bajo">Bajo</option>
+             <option value="Moderado">Moderado</option>
+             <option value="Alto">Alto</option>
+           </select>
+         </article>
         </section>
         <!--Contenedor de los card (main.js)-->
         <section id="cardContainer" class="cardContainer"></section>
@@ -80,12 +75,12 @@
 <!--Pie de página del proyecto incluye enlaces al proyecto github-->
 <footer>
   <hr>
-  <div class="end">
-    <img src="img/logo.png" alt="logo" id="logo">
-    <p>LIM014 Data Lovers < Laboratoria ><br>
-    Squad Up - <a href="https://github.com/meryvera/LIM014-data-lovers" class="sq" >Mery</a> & <a href="https://github.com/kelmita22/LIM014-data-lovers" class="sq">Kelly</a><br>
+  <article class="end">
+    <img src="img/logo.png" alt="logo" class="logo">
+    <p>LIM014 Data Lovers<br> Laboratoria <br>
+    Squad Up - <a href="https://github.com/meryvera/LIM014-data-lovers" class="sq" >Mery</a> - <a href="https://github.com/kelmita22/LIM014-data-lovers" class="sq">Kelly</a><br>
     2021</p>
-  </div>
+  </article>
 </footer>
 
 </body>
