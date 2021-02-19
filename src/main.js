@@ -44,7 +44,7 @@ function cardChampions(data) {
 //I. FUNCION PARA BUSQUEDA DE CAMPEONES
 //Parte 1 - Método para enlistar campeones en Datalist
 let datalist = document.getElementById("championsLol");
-let AllKeyChampions = Object.keys(data.data); 
+let AllKeyChampions = Object.keys(data.data);
 
 //Parte 2 - Funcion para enlistar opciones de campeones
 function createdOptionsDataList(){
@@ -63,70 +63,52 @@ inputSearch.addEventListener('click', createdOptionsDataList());
 inputSearch.addEventListener("change" , function() {
   const selectSearch = inputSearch.value;
 
-  //4.1 - Filtrado y Sort de los AllChampions 
+  //4.1 - Filtrado y Sort de los AllChampions
   let filteredChampionLol = filterChampion(AllChampions, selectSearch);
   const AllChampionsSort = sortChampionsDes(AllChampions);
 
   cardcontainer.innerHTML = '';
   cardChampions(filteredChampionLol);
   if (selectSearch === "Orden Descendente"){
-    cardcontainer.innerHTML = ''; 
-    cardChampions(AllChampionsSort); 
-  }else if(selectSearch === "Todos los Campeones"){ 
-   cardcontainer.innerHTML = '';   
-   cardChampions(AllChampions); 
-  } 
-}); 
-  
+    cardcontainer.innerHTML = '';
+    cardChampions(AllChampionsSort);
+  }else if(selectSearch === "Todos los Campeones"){
+   cardcontainer.innerHTML = '';
+   cardChampions(AllChampions);
+  }
+});
+
 //II. FUNCIÓN DE FILTRADO Y DESFILTRADO DE ROLES */
 const selectRoles= document.getElementById('rolesLol');
-selectRoles.addEventListener('change', function functSelecRols() { 
-  let selectedOption = selectRoles.options[selectRoles.selectedIndex].value; 
-  let filteredRolesLol = filterRoles(AllChampions, selectedOption); 
+selectRoles.addEventListener('change', function functSelecRols() {
+  let selectedOption = selectRoles.options[selectRoles.selectedIndex].value;
+  let filteredRolesLol = filterRoles(AllChampions, selectedOption);
 
-  cardcontainer.innerHTML = ''; 
-  cardChampions(filteredRolesLol); 
-  if(selectedOption == "BackAllRoles"){ 
-    cardcontainer.innerHTML = ''; 
-    cardChampions(AllChampions); 
+  cardcontainer.innerHTML = '';
+  cardChampions(filteredRolesLol);
+  if(selectedOption == "BackAllRoles"){
+    cardcontainer.innerHTML = '';
+    cardChampions(AllChampions);
   }
-}); 
+});
 
-//III. FUNCION PARA BUSQUEDA DE NIVELES 
-const selectLevels= document.getElementById('levelsLol'); 
-selectLevels.addEventListener('change', function functSelecLevels() { 
-  let selectedLevelOption = selectLevels.options[selectLevels.selectedIndex].value; 
-  let filteredLevelsLol = filterLevels(AllChampions, selectedLevelOption); 
+//III. FUNCION PARA BUSQUEDA DE NIVELES
+const selectLevels= document.getElementById('levelsLol');
+selectLevels.addEventListener('change', function functSelecLevels() {
+  let selectedLevelOption = selectLevels.options[selectLevels.selectedIndex].value;
+  let filteredLevelsLol = filterLevels(AllChampions, selectedLevelOption);
 
-  if (selectedLevelOption == "Bajo"){ 
-    cardcontainer.innerHTML = ''; 
-    cardChampions(filteredLevelsLol); 
-  } else if (selectedLevelOption == "Moderado"){ 
-    cardcontainer.innerHTML = ''; 
-    cardChampions(filteredLevelsLol); 
-  }else if (selectedLevelOption == "Alto"){ 
-    cardcontainer.innerHTML = ''; 
-    cardChampions(filteredLevelsLol); 
-  } else { 
-    cardcontainer.innerHTML = ''; 
-    cardChampions(AllChampions); 
-  } 
-}) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  if (selectedLevelOption == "Bajo"){
+    cardcontainer.innerHTML = '';
+    cardChampions(filteredLevelsLol);
+  } else if (selectedLevelOption == "Moderado"){
+    cardcontainer.innerHTML = '';
+    cardChampions(filteredLevelsLol);
+  }else if (selectedLevelOption == "Alto"){
+    cardcontainer.innerHTML = '';
+    cardChampions(filteredLevelsLol);
+  } else {
+    cardcontainer.innerHTML = '';
+    cardChampions(AllChampions);
+  }
+})
