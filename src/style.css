@@ -2,6 +2,7 @@
 * {margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   }
 /*Medida de imagen de fondo de página*/
 body{background-image: url("img/Fondo.jpg");
@@ -19,6 +20,25 @@ header {background: #3f3e3c;
 .logo {width: 150px;
       height: 90px;
       }
+=======
+ }
+/*Medida de imagen de fondo de página*/
+body{background-image: url(img/Fondo.jpg);
+    background-size: cover;
+    }
+/*Color fondo de barra de navegación*/
+header {background: #3f3e3c;
+       position: fixed;
+       left: 0;
+       top: 0;
+       right: 0;
+       z-index: 1;
+       }
+/*Medidas de logo Squad Up*/
+#logo {width: 100px;
+      height: 100px;
+     }
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
 /*Medidas y ubicación de contenedor de listas*/
 .container_nav {width: 70%;
                height: 100px;
@@ -26,7 +46,11 @@ header {background: #3f3e3c;
                display: flex;
                justify-content: space-between;
                align-items: center;
+<<<<<<< HEAD
                }
+=======
+              }
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
 /*Listas sin diseño (raya y punto)*/
 .navigation ul { list-style: none;}
 /*Distribución de listas*/
@@ -39,19 +63,27 @@ header {background: #3f3e3c;
                font-weight: bolder;
                font-size: 1.3rem;
                text-decoration: none;
+<<<<<<< HEAD
                }
+=======
+              }
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
 /*Efecto hover para las listas*/
 .menu li a:hover {background: white;
                  border-radius: 20px;
                  transition: all .4s;
                  opacity: 80%;
+<<<<<<< HEAD
                  }
+=======
+                }
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
 /*Diseño submenu hacks*/
 .submenu {position: absolute;
-          background: #38352E;
-          width: 120px;
-          display: none;
-         }
+         background: #38352E;
+         width: 120px;
+         display: none;
+        }
 /*Diseño elemento a de submenu*/
 .submenu li a {display: block;
               padding: 1rem;
@@ -59,6 +91,7 @@ header {background: #3f3e3c;
               font-family: 'Rozha One', serif;
               font-weight: bolder;
               text-decoration: none;
+<<<<<<< HEAD
               }
 /*Efecto hover submenu*/
 .menu li:hover .submenu {display: block;}
@@ -70,6 +103,12 @@ header {background: #3f3e3c;
                font-weight: bold;
                color:rgb(194, 144, 45)
               } 
+=======
+             }
+/*Efecto hover submenu*/
+.menu li:hover .submenu {display: block;}
+
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
  /*ESTILOS DEL MAIN*/
  /*BANNER*/
  .banner{
@@ -81,11 +120,21 @@ header {background: #3f3e3c;
    margin-bottom: 35px;
    object-fit: cover;
  }
+<<<<<<< HEAD
  /*CONTAINER WRAPPER*/
  .wrapper{
    max-width: 1000px;
    margin: auto;
  }
+=======
+
+ /*CONTAINER WRAPPER*/
+ .wrapper{
+   max-width: 1120px;
+   margin: auto;
+ }
+
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
  /*Barra De Navegación*/
  .navbar-container {
    display: flex;
@@ -102,22 +151,35 @@ header {background: #3f3e3c;
    margin-right: 10px;
    color:rgb(194, 144, 45);
  }
+<<<<<<< HEAD
  .icon {
    /*transition: left 250ms ease 0s; */
     fill:rgb(194, 144, 45);
     height: 23px;
     width: 23px;
  }
+=======
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
  .rols, .nivels{
    display: flex;
    justify-content: space-between;
  }
+<<<<<<< HEAD
  /*Barra De Navegación-Input buscador de campeones*/
  .search {
   display: flex;
    align-items: center;
  }
  .search input {
+=======
+
+ /*Barra De Navegación-Input buscador de campeones*/
+ .search-div{
+  display: flex;
+  align-items: center;
+ }
+ .search-input {
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
    padding: 5px 7px;
    border-radius: 8px;
    width: 250px;
@@ -128,9 +190,16 @@ header {background: #3f3e3c;
   .searchButton{
      align-items: center;
   }
+<<<<<<< HEAD
   .championAll{
     white-space:pre-wrap;
   }
+=======
+/*   .search-datalist{
+    /* white-space:pre-wrap;
+  } */
+
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
  /*Barra De Navegación-Input buscador de roles*/
  .roles select{
    /* position: absolute; */
@@ -140,6 +209,7 @@ header {background: #3f3e3c;
    border-radius: 4px;
    border-style: none;
    font-family: 'Rozha One', serif;
+<<<<<<< HEAD
    font-size: 1rem;
    font-weight: bold;
    padding-right: 10px;
@@ -188,6 +258,55 @@ background-color: #0f0f0fea
   transition: all .4s;
   opacity: 80%;  
 }
+=======
+   font-size: 1.25rem;
+   font-weight: bold;
+   padding-right: 10px;
+   }
+
+ .roles option{
+   display: block;
+   padding: 7px 4px 7px 3px;
+   text-decoration: none;
+   color: rgb(194, 144, 45);
+   font-size: 1.2rem;
+   font-weight: bold;
+ }
+ .roles option:hover{
+   /* background-color: #cac8c5e7; */
+   color: #3f3e3c;
+   cursor: pointer;
+ }
+
+ /*Barra De Navegación-Input buscador de niveles*/
+  .levels select{
+  /* position: absolute; */
+  width: 100%;
+  background-color: #2c2b2a93;
+  color:rgb(194, 144, 45) ;
+  border-radius: 4px;
+  border-style: none;
+  font-family: 'Rozha One', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-right: 10px;
+  outline-style: none;
+  }
+
+  .levels option{
+  display: block;
+  padding: 7px 4px 7px 3px;
+  text-decoration: none;
+  color: rgb(194, 144, 45);
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
+  .levels option:hover{
+  background-color: #cac8c5e7;
+  color: #3f3e3c;
+  cursor: pointer;
+  }
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
  /* CONTENEDOR DE CARD EFECTO FLIPER */
  /* Contenedor general para flexibizar los elementos */
  .cardContainer {display: flex;
@@ -195,10 +314,17 @@ background-color: #0f0f0fea
                  justify-content: center;
                 }
 /* Contenedor de cards y sus atributos */
+<<<<<<< HEAD
 .card-container {width: 225px;
                 height: 250px;
                 border-radius: 10px;
                 background: white;
+=======
+.card-container {width: 260px;
+                height: 318px;
+                border-radius: 10px;
+                background: rgb(201, 198, 198);
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
                 margin: 10px;
                 -webkit-perspective: 700;
                }
@@ -224,6 +350,7 @@ background-color: #0f0f0fea
 .front {border-radius: 10px;
        text-align: center;
        transition: all 0.25s;
+<<<<<<< HEAD
        background: #D6BF67;      
        }
 .lista{
@@ -272,6 +399,56 @@ background-color: #0f0f0fea
            height: 80%;
            border-radius: 10px;
           }
+=======
+       background: #D6BF67;
+       font-family: 'Rozha One', serif;
+       color: #38352E;
+       font-size: 1.5rem;
+     }
+.cardChampions-container-name{
+  padding-top: 3px;
+}
+.card-title{
+  display: inline;
+}
+.seemore-icon{
+  float: right;
+  margin-right: 15px;
+  max-width: 25px;
+  max-height: 25px;
+}
+/* Estilos card posterior */
+.back {background:#D6BF67;
+      border-radius: 10px;
+      transform: rotateY(180deg);
+      font-family: 'Rozha One', serif;
+      color: #38352E;
+      font-size: 1rem;
+      text-align: justify;
+      padding: 10px;
+      letter-spacing: 0.5px;
+     }
+ .back h2{
+   font-size: 1.5rem;
+   text-align: center;
+ }
+ .back p{
+   margin-top: 4px;
+  margin-bottom: 3px;
+ }
+ .back-characters{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding-left: 15px;
+ }
+/* Estilos imagenes card */
+.img-fluid {width: 100%;
+           height: 85%;
+           border-radius: 10px;
+          }
+
+>>>>>>> ec128863455b9acf2844b52bc4376276f4dc65b8
 /*Pie de página*/
 footer {background: black;
        bottom: 0;
@@ -294,6 +471,13 @@ footer {background: black;
      }
 /*Color link github duplas*/
 .sq { color: skyblue;}
+
+
+
+
+
+
+
 
 
 
