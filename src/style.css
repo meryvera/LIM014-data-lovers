@@ -295,7 +295,65 @@ footer {background: black;
 /*Color link github duplas*/
 .sq { color: skyblue;}
 
-
+/*Formulario Daño de Ataque / Conocedores*/
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Rozha One', serif;
+  color:#D6BF67;
+}
+.datos{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.champion{
+  width: 400px;
+  height: 400px;
+  margin-top: 65%;
+  margin-left: 10%;
+}
+.containerForm{
+  margin-top: 60%;
+  margin-left: 5%;
+  height: 300px;
+  position: absolute;
+  padding: 30px 60px 40px 60px;
+  top: 300px;
+  z-index: 1000;
+  background-color: black;
+  border: 5px solid #D6BF67;
+  border-radius: 10px;
+}
+.labels{
+  font-size: .7em;
+  font-family: 'system-ui';
+  color:#D6BF67;
+  display: block;
+  padding-bottom: 8px;
+}
+.input{
+  display: block;
+  border: 3px solid #D6BF67;
+  padding: 6px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.submit{
+ display: block;
+ margin-left: 30%;
+ margin-bottom: 10px;
+ border: 3px solid #D6BF67;
+ padding: 6px 25px;
+ border-radius: 10px;
+ font-size: 1rem;
+ font-family: 'system-ui';
+ font-weight: bold;
+}
+.canvas{
+  margin-top: 45%;
+}
 
 
 

@@ -7,7 +7,6 @@ export const filterChampion = (data, selected) =>{
 // FUNCION PARA ORDEN DESCENDENTE 
 export const sortChampionsDes = (data) =>{
   const AllChampionsSort = data.sort((prev, next) => {
-    if(prev < next) return 1;
     if(prev > next) return -1;
      return 0;
   })
