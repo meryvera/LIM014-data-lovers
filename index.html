@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+    <title>Data-lovers</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <!--Contenido de navegación de la página-->
+    <header>
+      <!--Logo-->
+      <div class="container_nav">
+       <img src="img/lolol.png" alt="logo" class="logo">
+      <!--listas de navegación-->
+      <nav class="navigation"></nav>
+       <ul class="menu">
+         <li><a href="#" onclick="location.href = document.referrer; return false;">Campeones</a></li>
+         <li><a id="hackButton" href="#">Hacks</a>
+             <ul class="submenu">
+              <li><a id="a_begginers" href="https://lan.leagueoflegends.com/es-mx/how-to-play/">Principiantes</a></li>
+              <li><a id="a_semiExperts" href="#">Conocedores</a></li>
+             </ul>
+         </li>
+         <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index#/">Jugar</a></li>
+       </ul>
+      </nav>
+     </div>
+    </header>
+    <main>
+      <figure class="banner">
+        <img class="banner-img" src="./img/banner.png" alt="banner" >
+      </figure>
+      <div class="wrapper">
+        <section class="navbar-container">
+          <article class="search">
+            <div>
+              <input class="championsAll" type="search" name="championsall" id="search" list="championsLol" placeholder="Buscar Campeón">
+            </div>
+            <datalist id="championsLol" class="championAll">
+              <option class="oplist" value="az" id="optionAllChampions"></option>
+              <option class="oplist" value="za" id="sortLolChampions"></option>
+            </datalist>
+          </article>
+          <!--Filtro por roles main.js-->
+          <article class="roles">
+            <select id="rolesLol" name="rolesLol">
+              <option value="BackAllRoles" href="" id="t0">Roles de Campeones</option>
+              <option value="Fighter" href="" id="t1">Luchador</option>
+              <option value="Marksman" href="" id="t2">Tirador</option>
+              <option value="Mage" href="" id="t3">Mago o hechicero</option>
+              <option value="Assassin" href="" id="t4">Asesino</option>
+              <option value="Tank" href="" id="t5">Tanque</option>
+              <option value="Support" href="" id="t6">Apoyo o soporte</option>
+            </select>
+          </article>
+          <!--Filtro por niveles main.js-->
+          <article class="levels">
+            <select id="levelsLol">
+             <option value="BackAllLevels">Niveles de Dificultad</option>
+             <option value="Bajo">Bajo</option>
+             <option value="Moderado">Moderado</option>
+             <option value="Alto">Alto</option>
+           </select>
+         </article>
+        </section>
+        <!--Contenedor de los card (main.js)-->
+        <section id="cardContainer" class="cardContainer"></section>
+      </div>
+    </main>
+    <script src="main.js" type="module"></script>
+    <!--Pie de página del proyecto incluye enlaces al proyecto github-->
+    <footer>
+      <hr>
+      <article class="end">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <p>LIM014 Data Lovers<br> Laboratoria <br>
+        Squad Up - <a href="https://github.com/meryvera/LIM014-data-lovers" class="sq" >Mery</a> - <a href="https://github.com/kelmita22/LIM014-data-lovers" class="sq">Kelly</a><br>
+        2021</p>
+      </article>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+  </body>
+</html>
+
