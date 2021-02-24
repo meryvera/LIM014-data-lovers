@@ -221,7 +221,7 @@ usuario.
   - El usuario al darle click, el botón se activará mediante un borde dorado.
   - El botón mostrará una lista desplegable con 2 opciones (principiantes y conocedores)
 
-        ###### Cierre Historia 7
+      ###### Cierre Historia 7
 **Creación de botones de hacks para el juego(principiantes y conocedores):**
 * Header: Barra de navegación.  
 * Creación de botones hacks por niveles de jugadores (principantes y jugadores(estadíticas)).
@@ -230,7 +230,7 @@ usuario.
 
 ###### Historia de usuario 8
   + COMO: Jugador LOL principiante
-  + QUIERO: Conocer acerca del juego
+  + QUIERO: Conocer más del juego
   + PARA: Empezar a jugar
   
 ###### Criterios mínimos de aceptación
@@ -240,17 +240,55 @@ usuario.
   - Dicha vista tendrá toda la información introductoria para saber de qué trata el juego (videos, foros y links).
   - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
 
+      ###### Cierre Historia 8
+**Link a la página oficial de LOL para principiantes:**
+* Header: Barra de navegación.  
+* Link con la ruta a la página oficial para principiantes.
+
+
+
 ###### Historia de usuario 9
   + COMO: Jugador LOL intermedio
   + QUIERO: Mejorar mi técnica de juego
-  + PARA: Empezar a ganar partidas
+  + PARA: Calcular su daño de ataque
   
 ###### Criterios mínimos de aceptación
-  - El usuario al dar click a la opción de conocedor lo llevará a otra vista.
-  - Dicha vista tendrá toda la información relevante como estadísticas de campeones, trucos, estrategias y links a foros donde se compartirán detalles de estrategia.
+  - El usuario al dar click a la opción de conocedores lo llevará a otra vista.
+  - Dicha vista tendrá una calculadora en tiempo real para promediar el daño de ataque de los jugadores.
   - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
-  
+
+      ###### Cierre Historia 9
+**En el botón de conocedores crearemos una calculadora en tiempo real:**
+* Header: Barra de navegación.  
+* Botón con la opción de Conocedores.
+* El usuario encontrará 3 input:
+* Input 1: Ingresará los valores del Ataque ó habilidad de su campeón.  
+* Input 2: Ingresará los valores de Armadura ó Resistencia Mágica.
+* Encontrará un botón de calcular al cual deberá hacerle click.
+* Input 3: Arrojará el resultado promedio del cálculo.
+
+
 ###### Historia de usuario 10
+  + COMO: Jugador LOL intermedio
+  + QUIERO: Mejorar mi técnica de juego
+  + PARA: Visualizar estadísticas de los promedio básicos de ataque de los campeones.
+  
+###### Criterios mínimos de aceptación
+  - El usuario al dar click a la opción de conocedores lo llevará a otra vista.
+  - Dicha vista mostrará una estadística en donde se encontrarán los promedios del daño de ataque básico de los campeones.
+  - El usuario podrá ver siempre la barra del header para poder navegar fácilmente en todo el site.
+
+  ###### Cierre Historia 10
+**En el botón de conocedores crearemos una calculadora ent tiempo real:**
+* Header: Barra de navegación.  
+* Botón con la opción de Conocedores.
+* El usuario visualizará 3 línea de información:
+* Línea 1: Mostrará el Ataque básico de cada campeón en orden alfabético.  
+* Línea 2: Mostrará la Armadura básica de cada campeón en orden alfabético.
+* Línea 3: Mostrará el promedio básico del daño de ataque en relación a estos 2 valores de cada campeón en orden alfabético.
+
+
+###### Historia de usuario 11
   + COMO: Jugador LOL
   + QUIERO: Un link que me lleve a la plataforma oficial del Juego
   + PARA: Empezar a jugar!
@@ -260,7 +298,7 @@ usuario.
   - El usuario al dar click al botón "Jugar" , éste se activará y mostrará un borde dorado.
   - El usuario podrá aterrizar a la plataforma de juego oficial para empezar sus partidas.
 
-   ###### Cierre Historia 10
+   ###### Cierre Historia 11
 **Creación de botón jugar que redirija a lap página oficial de LOL**
 * Header: Barra de navegación.  
 * Creación de botón jugar que redirija a lap página oficial de LOL.
