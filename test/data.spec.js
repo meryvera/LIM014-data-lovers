@@ -1,4 +1,4 @@
-import { filterChampion , filterRoles, filterLevels , sortChampionsDes, sortChampionsAsc, attack, attackStats} from '../src/data.js';
+import { filterChampion , filterRoles, filterLevels , sortChampionsDes, sortChampionsAsc, attack, /* attackStats */} from '../src/data.js';
 
 const champions = [
   [
@@ -181,21 +181,21 @@ describe('Should return attack as function', () => {
   });
 });
 
-const championsarmor = [24.04, 19.72, 25.88]
+// const championsarmor = [24.04, 19.72, 25.88]
 
-const championsattackdamage = [46, 51.208, 61.036]
+// const championsattackdamage = [46, 51.208, 61.036]
 
-const champions3 = [37.084811351177045, 42.7731373204143, 48.48744836352082]
+// const champions3 = [37.084811351177045, 42.7731373204143, 48.48744836352082]
 
 // TEST PARA DAÑO DE ATAQUE SEGÚN DATA LOL ESTADISTICA
-describe('Should return attackStats as function', () => {
-  it('is a function', () => {
-    expect(typeof attackStats).toBe('function');
-  });
-  test('Shoul return champions in decending order', () => {
-    expect(attackStats(championsattackdamage, championsarmor)).toEqual(champions3);
-  });
-});
+// describe('Should return attackStats as function', () => {
+//   it('is a function', () => {
+//     expect(typeof attackStats).toBe('function');
+//   });
+//   test('Shoul return champions in decending order', () => {
+//     expect(attackStats(championsattackdamage, championsarmor)).toEqual(champions3);
+//   });
+// });
 
 
 

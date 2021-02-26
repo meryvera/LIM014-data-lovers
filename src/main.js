@@ -1,5 +1,5 @@
 import data from './data/lol/lol.js';
-import { filterChampion,filterRoles,filterLevels,sortChampionsDes, sortChampionsAsc,attack, attackStats} from './data.js';
+import { filterChampion,filterRoles,filterLevels,sortChampionsDes, sortChampionsAsc,attack, /* attackStats */} from './data.js';
 
 // VARIABLES GLOBALES - CONVERSION DE LA DATA JSON DE OBJETOS A ARRAYS
 const cardcontainer = document.querySelector('.cardContainer');
@@ -56,7 +56,7 @@ function cardChampions(data) {
       datalist.insertBefore(option,datalist.lastChild);
     }
   }
-  
+
   //Parte 3 - Función para cuando se da click en el input se despliegue el datalist
   let inputSearch = document.getElementById('search');
   inputSearch.addEventListener('click', createdOptionsDataList());
@@ -122,25 +122,24 @@ a_semiExperts.addEventListener('click', functSemiExperts)
 
 function functSemiExperts () {//creo qe event prevent default va a aca cuando arriba la funcion no tiene ()
   wrapper.innerHTML = `
-    <section>
-      <h1>Cálculo Daño de Ataque</h1>
+    <div class="containerData">
+      <h2 class="h2-conocedores">Cálculo de daño de ataque</h2>
       <section class="datos">
         <img src="img/input.png" class="champion">
-          <section class="containerForm">
-            <form name="formulario" class=>
-              <label class="labels">Ingresa el daño de ataque o poder de habilidad</label>
-              <input class="input" type="number" name="ataque" id="ataqueHabilidad" placeholder="Ataque o Habilidad"><br>
-              <label class="labels">Ingresa armadura o Resistencia mágica</label>
-              <input class="input" type="number" name="armadura" id="armaduraResistencia" placeholder="Armadura o resistencia mágica"><br>
-              <button class="submit" id="boton-calcular">Calcular</button>
-              <input class="input" id="resultado">
-            </form>
-          </section>
+        <form name="formulario" class="containerForm">
+          <label class="labels">Ingresa el daño de ataque o poder de habilidad</label>
+          <input class="input" type="number" name="ataque" id="ataqueHabilidad" placeholder="Ataque o Habilidad"><br>
+          <label class="labels">Ingresa armadura o Resistencia mágica</label>
+          <input class="input" type="number" name="armadura" id="armaduraResistencia" placeholder="Armadura o resistencia mágica"><br>
+          <button class="submit" id="boton-calcular">Calcular</button>
+          <input class="input" id="resultado" placeholder="Resultado">
+        </form>
       </section>
-    </section>
-    <section>
-      <canvas class="canvas" id="myChart" width="900" height="700"></canvas>
-    </section>
+      <section>
+        <canvas class="canvas" id="myChart" width="900" height="700"></canvas>
+      </section>
+    </div>
+
   `
   //HACK CONOCEDORES - FUNCION PARA HACER CÁLCULO DE CALCULO BÁSICO DE 1 ATAQUE
   const botonCalcular = document.getElementById('boton-calcular');
@@ -160,13 +159,13 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
   })
 
   // HACK CONOCEDORES -CÁLCULO DE CALCULO BÁSICO DE 1 ATAQUE
-   const valoresArmor= AllChampions.map(item => item[1].stats.armor) 
-   /* console.log(valoresArmor)  */
-   const valoresAtaque = AllChampions.map(item2 =>item2[1].stats.attackdamage) 
-   let calculateDamage = attackStats(valoresAtaque, valoresArmor); 
- /*   console.log(calculateDamage)  */
-   
-   const ctx = document.querySelector('#myChart').getContext('2d');
+  //  const valoresArmor= AllChampions.map(item => item[1].stats.armor)
+  //  /* console.log(valoresArmor)  */
+  //  const valoresAtaque = AllChampions.map(item2 =>item2[1].stats.attackdamage)
+  //  let calculateDamage = attackStats(valoresAtaque, valoresArmor);
+  //   console.log(calculateDamage)
+
+/*    const ctx = document.querySelector('#myChart').getContext('2d');
    new Chart(ctx,{
 
        type :'line',
@@ -242,4 +241,16 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
            }
          }
      })
+   Chart(); */
+}
+
+//FUNCIÓN DE MENÚ HAMBURGUESA
+    document.querySelectorAll(".more")[0].addEventListener("click",menu);
+
+    function menu(event){
+      event.preventDefault();
+      const allElements = document.querySelector('.menu');
+      console.log(allElements);
+      allElements.classList.toggle('is-active');
+
     }

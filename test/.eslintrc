@@ -2,4 +2,12 @@
   "env": {
     "jest": true
   }
+  //  "plugins":[
+  //   "chartjs"
+  // ]
+  /*"rules": {
+    "chartjs/font-color": "warn",
+    "chartjs/min-max-configuration": "warn"
+  } */
 }
+
