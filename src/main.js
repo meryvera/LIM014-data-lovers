@@ -19,18 +19,18 @@ function cardChampions(data) {
           <article class="card front">
             <img class="img-fluid" alt= "${element[1].name}" src="${element[1].splash}" id="img">
             <h4 class="card-title">${element[1].name}
-            <a class="circulo" href="#"><img class="seemore-icon" src="img/flecha.png"></a></h4>
+            <a class="circulo"><img class="seemore-icon" src="img/flecha.png"></a></h4>
           </article>
           <article class="card back">
             <h2 id="fontCard">${element[1].id}</h2>
-            <p class="fonth2" id="fontCard">${element[1].blurb}</p><hr>
+            <p class="fonth2" id="fontCard">${element[1].blurb}</p><hr></br>
             <p><strong>Habilidades:<strong></p>
             <ul class="lista" id="fontCard">
               <li><a id="fontCard">Ataque: ${element[1].info.attack}<a/></li>
               <li><a id="fontCard">Defensa: ${element[1].info.defense}<a/></li>
               <li><a id="fontCard">Magia: ${element[1].info.magic}<a/></li>
               <li><a id="fontCard">Dificultad: ${element[1].info.difficulty}<a/></li>
-            </ul><hr>
+            </ul><hr></br>
             <p>Roles:</p>
             <ul class="lista2">
               <li><a id="fontCard">${element[1].tags[0]}<a><li>
@@ -135,25 +135,21 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
           <input class="input" id="resultado" placeholder="Resultado">
         </form>
       </section>
-      <section>
-        <canvas class="canvas" id="myChart" width="900" height="700"></canvas>
-      </section>
     </div>
-
   `
+  /* <section> */
+  /* <canvas class="canvas" id="myChart" width="900" height="700"></canvas> */
+  /* </section> */
+
   //HACK CONOCEDORES - FUNCION PARA HACER CÁLCULO DE CALCULO BÁSICO DE 1 ATAQUE
   const botonCalcular = document.getElementById('boton-calcular');
   botonCalcular.addEventListener('click', function(event) {
     event.preventDefault();
     const ataque = parseFloat(document.getElementById('ataqueHabilidad').value);
-    /* console.log(ataque); */
     const armadura = parseFloat(document.getElementById('armaduraResistencia').value);
-   /*  console.log(armadura); */
     const resultado = document.getElementById('resultado');
-   /*  console.log(resultado); */
 
     let calcular = attack(ataque, armadura)
-      /* console.log(typeof attack); */
 
       resultado.value = calcular;
   })
@@ -250,7 +246,6 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
     function menu(event){
       event.preventDefault();
       const allElements = document.querySelector('.menu');
-      console.log(allElements);
       allElements.classList.toggle('is-active');
 
     }
