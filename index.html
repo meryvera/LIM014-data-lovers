@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
     <title>Data-lovers</title>
     <link rel="stylesheet" href="style.css"/>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
@@ -12,21 +13,22 @@
     <header>
       <!--Logo-->
       <div class="container_nav">
-       <img src="img/lolol.png" alt="logo" class="logo">
+        <img src="img/lolol.png" alt="logo" class="logo">
       <!--listas de navegación-->
-      <nav class="navigation"></nav>
-       <ul class="menu">
-         <li><a href="#" onclick="location.href = document.referrer; return false;">Campeones</a></li>
-         <li><a id="hackButton" href="#">Hacks</a>
-             <ul class="submenu">
-              <li><a id="a_begginers" href="https://lan.leagueoflegends.com/es-mx/how-to-play/">Principiantes</a></li>
-              <li><a id="a_semiExperts" href="#">Conocedores</a></li>
-             </ul>
-         </li>
-         <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index#/">Jugar</a></li>
-       </ul>
-      </nav>
-     </div>
+        <nav class="navigation">
+          <i class="material-icons more">menu</i>
+          <ul class="menu">
+            <li><a href="#" onclick="location.href = document.referrer;">Campeones</a></li>
+            <li><a id="hackButton" href="#">Hacks</a>
+                <ul class="submenu">
+                  <li><a id="a_begginers" href="https://lan.leagueoflegends.com/es-mx/how-to-play/">Principiantes</a></li>
+                  <li><a id="a_semiExperts" href="#">Conocedores</a></li>
+                </ul>
+            </li>
+            <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index#/">Jugar</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <figure class="banner">
@@ -73,14 +75,21 @@
     <!--Pie de página del proyecto incluye enlaces al proyecto github-->
     <footer>
       <hr>
-      <article class="end">
-        <img src="img/logo.png" alt="logo" class="logo">
-        <p>LIM014 Data Lovers<br> Laboratoria <br>
-        Squad Up - <a href="https://github.com/meryvera/LIM014-data-lovers" class="sq" >Mery</a> - <a href="https://github.com/kelmita22/LIM014-data-lovers" class="sq">Kelly</a><br>
-        2021</p>
-      </article>
+      <section>
+        <article class="end">
+          <img src="img/lolol.png" alt="logo" class="logo">
+        </article>
+        <article>
+          <p>LIM014</p>
+          <p>Data Lovers</p>
+          <p>Laboratoria</p>
+          <p>Squad Up</p>
+          <p><a href="https://github.com/meryvera/LIM014-data-lovers" class="sq" >Mery</a>&nbsp;
+          <a href="https://github.com/kelmita22/LIM014-data-lovers" class="sq">Kelly</a></p>
+          <p>2021</p>                                      
+        </article>
+      </section>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
   </body>
 </html>
-

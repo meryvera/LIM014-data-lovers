@@ -5,7 +5,9 @@
   }
 /*Medida de imagen de fondo de página*/
 body{background-image: url("img/Fondo.jpg");
-     background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;   
     }
 /*Color fondo de barra de navegación*/
 header {background: #3f3e3c;
@@ -16,8 +18,8 @@ header {background: #3f3e3c;
         z-index: 1;
        }
 /*Medidas de logo Squad Up*/
-.logo {width: 150px;
-      height: 90px;
+.logo {width: 130px;
+      height: 130px;
       }
 /*Medidas y ubicación de contenedor de listas*/
 .container_nav {width: 70%;
@@ -43,7 +45,7 @@ header {background: #3f3e3c;
 /*Efecto hover para las listas*/
 .menu li a:hover {background: white;
                  border-radius: 20px;
-                 transition: all .4s;
+                 transition: all 2s;
                  opacity: 80%;
                  }
 /*Diseño submenu hacks*/
@@ -69,7 +71,7 @@ header {background: #3f3e3c;
                font-size: 1rem;
                font-weight: bold;
                color:rgb(194, 144, 45)
-              } 
+              }
  /*ESTILOS DEL MAIN*/
  /*BANNER*/
  .banner{
@@ -83,7 +85,8 @@ header {background: #3f3e3c;
  }
  /*CONTAINER WRAPPER*/
  .wrapper{
-   max-width: 1000px;
+/*    max-width: 1000px; */
+  width: 80%;
    margin: auto;
  }
  /*Barra De Navegación*/
@@ -91,6 +94,7 @@ header {background: #3f3e3c;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
    padding: 20px 20px;
    border: solid rgb(194, 144, 45) 3px;
    border-radius: 18px;
@@ -102,7 +106,7 @@ header {background: #3f3e3c;
    margin-right: 10px;
    color:rgb(194, 144, 45);
  }
- .icon {
+ .icons {
    /*transition: left 250ms ease 0s; */
     fill:rgb(194, 144, 45);
     height: 23px;
@@ -158,7 +162,7 @@ header {background: #3f3e3c;
  .roles :hover{
     background: white;
     transition: all .4s;
-    opacity: 80%;  
+    opacity: 80%;
  }
  /*Barra De Navegación-Input buscador de niveles*/
 .levels select{
@@ -186,7 +190,7 @@ background-color: #0f0f0fea
 .levels :hover{
   background: white;
   transition: all .4s;
-  opacity: 80%;  
+  opacity: 80%;
 }
  /* CONTENEDOR DE CARD EFECTO FLIPER */
  /* Contenedor general para flexibizar los elementos */
@@ -195,8 +199,8 @@ background-color: #0f0f0fea
                  justify-content: center;
                 }
 /* Contenedor de cards y sus atributos */
-.card-container {width: 225px;
-                height: 250px;
+.card-container {width: 240px;
+                height: 300px;
                 border-radius: 10px;
                 background: white;
                 margin: 10px;
@@ -205,14 +209,14 @@ background-color: #0f0f0fea
 /* Efecto flip */
 .cardChampions{height: 100%;
               width: 100%;
-              position: relative;
+              position: absolute;
               transform-style: preserve-3d;
-              transition: 2s;
+              transition: 1s;
              }
 /* Transición hover */
 .cardChampions:hover {transform: rotateY(180deg);
-                     box-shadow: 0 12px 16px white;
-                     cursor: pointer;
+                      box-shadow: 0px 0px 10px 10px white;
+                     cursor: move;
                     }
 /* Estilos ambas cards */
 .card {width: 100%;
@@ -224,7 +228,7 @@ background-color: #0f0f0fea
 .front {border-radius: 10px;
        text-align: center;
        transition: all 0.25s;
-       background: #D6BF67;      
+       background: #D6BF67;
        }
 .lista{
   list-style: none;
@@ -233,13 +237,13 @@ background-color: #0f0f0fea
 .front h4{
   font-family: 'Rozha One', serif;
   color: #38352E;
-  font-size: 1.5rem;
-  text-align: center; 
+  font-size: 2rem;
+  text-align: center;
   margin: 5px;
         }
 .circulo{
   float: right;
-  margin: 0px 15px 10px 10px;
+  margin: 7px 15px 10px 10px;
         }
 /* Estilos card posterior */
 .back {background-image: url("img/fondo.png");
@@ -251,7 +255,7 @@ background-color: #0f0f0fea
       color:#D6BF67;
       font-size: 1rem;
       text-align: center;
-      padding: 10px;      
+      padding: 25px;
      }
 .fonth2 {
   /* font-weight: bold; */
@@ -272,77 +276,52 @@ background-color: #0f0f0fea
            height: 80%;
            border-radius: 10px;
           }
-/*Pie de página*/
-footer {background: black;
-       bottom: 0;
-       width: 100%;
-       height: 100px;
-       text-align: center;
-       color: white;
-       font-family: 'Rozha One', serif;
-       }
-/*Diseño de texto y logo*/
-.end {width: 25%;
-     height: 100px;
-     margin: 0 auto;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-size: 0.8rem;
-     line-height: 1.5em;
-     }
-/*Color link github duplas*/
-.sq { color: skyblue;}
 
 /*Formulario Daño de Ataque / Conocedores*/
-h1 {
+.h2-conocedores {
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   font-family: 'Rozha One', serif;
   color:#D6BF67;
+  margin-bottom: 60px;
 }
 .datos{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50% , -50%);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .champion{
-  width: 400px;
-  height: 400px;
-  margin-top: 65%;
-  margin-left: 10%;
+  margin-right: 20px;
+  max-width: 450px;
+  max-height: 450px;
 }
 .containerForm{
-  margin-top: 60%;
-  margin-left: 5%;
-  height: 300px;
-  position: absolute;
-  padding: 30px 60px 40px 60px;
-  top: 300px;
-  z-index: 1000;
+  padding: 20px 30px 20px 30px;
   background-color: black;
   border: 5px solid #D6BF67;
   border-radius: 10px;
-}
-.labels{
-  font-size: .7em;
   font-family: 'system-ui';
   color:#D6BF67;
-  display: block;
-  padding-bottom: 8px;
+  font-size: 1.1rem;
+  max-width: 400px;
 }
+.labels{
+  font-size: 1.2rem;
+  font-family: 'system-ui';
+ }
 .input{
-  display: block;
+  width:100%;
   border: 3px solid #D6BF67;
-  padding: 6px 25px;
   border-radius: 10px;
   font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .submit{
  display: block;
- margin-left: 30%;
+ margin: auto;
+ margin-top: 10px;
  margin-bottom: 10px;
  border: 3px solid #D6BF67;
  padding: 6px 25px;
@@ -351,9 +330,86 @@ h1 {
  font-family: 'system-ui';
  font-weight: bold;
 }
-.canvas{
-  margin-top: 45%;
+
+footer{
+  color: white;
+  font-family: 'Rozha One', serif;
+  font-size: 0.8rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
+footer section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+}
+/*Color link github duplas*/
+footer a {
+  color: skyblue;
+  margin-bottom: 10%;
+}
+
+/* .canvas{
+} */
+
+/* ESTILOS DEL ICONO DEL MENU */
+.material-icons{
+  visibility: hidden;
+  color:rgb(194, 144, 45);
+}
+
+/* ESTILOS DE BREAKPOINTS */
+
+@media (max-width: 816px) {
+  .navbar-container input{
+    margin-bottom: 8px;
+  }
+  body .datos{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+  }
+@media (max-width: 753px) {
+  .menu{
+    display: none;
+  }
+  .material-icons{
+    visibility: visible;
+  }
+  .menu.is-active{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    left: 0vw;
+    width: 50%;
+    top: 100px;
+    height:100vh ;
+    background: #38352ee1;
+  }
+}
+@media (max-width: 491px) {
+  .navbar-container select{
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 360px) {
+  nav .logo{
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  .navbar-container input{
+    width: 92%;
+  }
+}
+
 
 
 
