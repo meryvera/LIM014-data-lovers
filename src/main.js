@@ -1,5 +1,5 @@
 import data from './data/lol/lol.js';
-import { filterChampion,filterRoles,filterLevels,sortChampionsDes, sortChampionsAsc,attack, /* attackStats */} from './data.js';
+import { filterChampion,filterRoles,filterLevels,sortChampionsDes, sortChampionsAsc,attack, attackStats} from './data.js';
 
 // VARIABLES GLOBALES - CONVERSION DE LA DATA JSON DE OBJETOS A ARRAYS
 const cardcontainer = document.querySelector('.cardContainer');
@@ -135,11 +135,12 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
           <input class="input" id="resultado" placeholder="Resultado">
         </form>
       </section>
+      <section> 
+      <canvas class="canvas" id="myChart" width="900" height="700"></canvas>
+      </section>
     </div>
   `
-  /* <section> */
-  /* <canvas class="canvas" id="myChart" width="900" height="700"></canvas> */
-  /* </section> */
+
 
   //HACK CONOCEDORES - FUNCION PARA HACER CÁLCULO DE CALCULO BÁSICO DE 1 ATAQUE
   const botonCalcular = document.getElementById('boton-calcular');
@@ -155,15 +156,14 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
   })
 
   // HACK CONOCEDORES -CÁLCULO DE CALCULO BÁSICO DE 1 ATAQUE
-  //  const valoresArmor= AllChampions.map(item => item[1].stats.armor)
+   const valoresArmor= AllChampions.map(item => item[1].stats.armor)
   //  /* console.log(valoresArmor)  */
-  //  const valoresAtaque = AllChampions.map(item2 =>item2[1].stats.attackdamage)
-  //  let calculateDamage = attackStats(valoresAtaque, valoresArmor);
-  //   console.log(calculateDamage)
+   const valoresAtaque = AllChampions.map(item2 =>item2[1].stats.attackdamage)
+   let calculateDamage = attackStats(valoresAtaque, valoresArmor);
+    console.log(calculateDamage)
 
-/*    const ctx = document.querySelector('#myChart').getContext('2d');
+   const ctx = document.querySelector('#myChart').getContext('2d');
    new Chart(ctx,{
-
        type :'line',
        data : {
          labels: AllKeyChampions,
@@ -237,7 +237,6 @@ function functSemiExperts () {//creo qe event prevent default va a aca cuando ar
            }
          }
      })
-   Chart(); */
 }
 
 //FUNCIÓN DE MENÚ HAMBURGUESA

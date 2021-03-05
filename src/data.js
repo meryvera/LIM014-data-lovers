@@ -46,14 +46,14 @@ export const attack = (ataque, armadura) => {
 }
 
 // FUNCION MODULO DE CÁLCULO DE DAÑO DE ATAQUE BÁSICO ESTADÍSTICA
-// export const attackStats = (ataque, armadura) => {
-//   let newArraycalculate=[]
-//   for(let i=0; i < ataque.length; i++){
-//     let attackCalculate = (ataque[i]*100) / (100 + armadura[i]);
-//     newArraycalculate.push(attackCalculate)
-//   }
-//   return newArraycalculate;
-// }
+export const attackStats = (ataque, armadura) => {
+  let newArraycalculate=[]
+  for(let i=0; i < ataque.length; i++){
+    let attackCalculate = (ataque[i]*100) / (100 + armadura[i]);
+    newArraycalculate.push(attackCalculate)
+  }
+  return newArraycalculate;
+}
 
 
 
